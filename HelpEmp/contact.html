@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+
+    <div>
+        <ul class="topnav">
+          <h2 style="padding-right: 52%; color: lavender;">HelpEmp</h2>
+          <li><a href="index.html">Home</a></li>
+          
+          <li><a href="aboutus.php">Team Mate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Login.html">Login</a></li>
+        </ul>
+      </div>
+<!-- Background image -->
+<div style="
+      background-image: url('pictures/contactus/contact_us_banner_en.jpg');
+      background-repeat: no-repeat; ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+   
+<div class="container" style="color: rgb(248, 247, 241);">
+    
+    <div class="text-center">
+            <h2>Contact us</h2>
+            <p class="lead">We're here to help and answer any question you might here. We look forward to hearing from you &#128522;</p>
+          </div>
+    <fieldset style="padding-left: 65%;">
+      <form name="frmContact" class="needs-validation " method="post" action="contact.php">
+        <p>
+          <label for="Name">Your Name </label>
+          <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value="" style="width: 300px;" required>
+          <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+        </p>
+        <p>
+          <label for="email">Your Email</label>
+          <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" style="width: 300px;" value="" required>
+        </p>
+        <p>
+          <label for="phone">Your Phone</label>
+          <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" style="width: 300px;" value="" required>
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea name="txtMessage" class="form-control"  id="txtMessage"  placeholder="Message" style="width: 350px; height: 100px;"  required></textarea>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          <input type="submit" name="Submit" id="Submit" value="Click me to Contact"  class="btn btn-outline-primary">
+        </p>
+      </form>
+    </fieldset>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
+   
+<script src="js/bootstrap.bundle.min.js"></script></body>
+</html>

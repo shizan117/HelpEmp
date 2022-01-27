@@ -1,0 +1,96 @@
+
+body {
+  margin: 0;
+}
+/* .s1 .container {
+	display:grid;
+	width: 500px;
+	background: white ;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+	padding: 3px 30px;
+	height: auto;   
+  padding-bottom: 3%; 
+}
+
+
+.s1 .container .circle{  
+  background-color: #43bcf0;  
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  border-radius: 100%;
+margin-left: auto;
+  margin-right: auto;
+margin-top: -35px;
+}
+tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1.5px;
+  padding-left: 50px;
+}
+s1 .table {
+  font-family: arial, sans-serif;
+ 
+  width: 100%;
+  border: 1px solid black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 7px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+} */
+
+ul.topnav {
+display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 2px;
+  padding: 2px;
+  height: 58px;
+  overflow: hidden;
+  background-color: #34495e;
+  
+}
+
+ul.topnav li a {
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    
+    border: 1px solid white;
+    border-radius: 3px ;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav {
+      flex-direction: column;
+      height: auto;
+    }
+    ul.topnav li{
+        margin: -1px;
+        border-style: groove;
+        border-color: rgb(214, 210, 210);
+      }
+
+      .informationforcontact{
+       
+        margin-top: -120%;
+
+      }
+}
+
+

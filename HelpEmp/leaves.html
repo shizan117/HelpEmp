@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul class="topnav">
+          <h2 style="padding-right: 52%; color: lavender;">HelpEmp</h2>
+          <li><a href="employee.php">Profile</a></li>
+          <li><a href="attendence.php">Attendence</a></li>
+          <li><a href="leaves.html">Leaves</a></li>
+          <li><a href="logout.php">Log out</a></li>
+
+
+        </ul>
+      </div>
+
+
+
+<div class="container; " style="width: 80%; padding-left: 25%;">
+    <h1 style="text-align: center;">Apply for Leave</h1>
+
+        <h4>Name</h4>
+      <form name="frmleave" class="needs-validation " method="post" action="leaves.php">
+            <input id="frmname" type="text"  placeholder="Full Name" name="name" class="form-control" required>
+             <br>
+
+        <h4>Employee ID</h4>
+        
+            <input id="frmid" type="text"  placeholder="ID" name="employee_id" class="form-control" required>
+            <br> 
+ 
+        <h4>Start Date</h4>
+            <input type="date" id="startdate" placeholder="8/23/2019" name="start_date" class="form-control" required>
+   
+ 
+    
+        <h4>End Date</h4>
+            <input type="date" id="enddate" placeholder="8/23/2019" name="end_date" class="form-control" required>
+              <br>    
+              <p>
+                <label for="message">Description</label>
+                <input class="form-control"  id="frmMessage"  placeholder="Description of leave" name='message' style="width: 350px; height: 100px;"  required>
+              </p>
+
+              <p>
+                <input type="submit" name="Submit" id="frmSubmit" value="Apply for a Leave"  class="btn btn-outline-primary">
+              </p>
+        </form>
+
+</div>
+    
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
